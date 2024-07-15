@@ -1,14 +1,14 @@
-Here it is how you can call operations from Apollo Server:
-  query getAllUsers{
+**Here it is how you can call operations from Apollo Server:**
+
+  `query getAllUsers{ 
   users {
     id
     email
     username
-
   }
-}
+}`
 
-query getAllEvents{
+`query getAllEvents{
   events {
     id
     date
@@ -19,17 +19,17 @@ query getAllEvents{
     to
     user_id
   }
-}
+}`
 
-query getAllParticipants{
+`query getAllParticipants{
   participants {
     id
     event_id
     user_id
   }
-}
+}`
 
-query getAllLocations{
+`query getAllLocations{
   locations {
     id
     desc
@@ -37,17 +37,17 @@ query getAllLocations{
     lng
     name
   }
-}
+}`
 
-query getUser{
+`query getUser{
   user(id: "1") {
     id
     username
     email
   }
-}
+}`
 
-query getEvent{
+`query getEvent{
   event(id:"1"){
     id
     desc
@@ -58,17 +58,17 @@ query getEvent{
     user_id
     location_id
   }
-}
+}`
 
-query getParticipant{
+`query getParticipant{
   participant(id: "1") {
     id
     user_id
     event_id
   }
-}
+}`
 
-query getLocation{
+`query getLocation{
   location(id:"1"){
     id
     desc
@@ -76,9 +76,9 @@ query getLocation{
     lat
     lng
   }
-}
+}`
 
-query getEventsDetails{
+`query getEventsDetails{
   events {
      id
     title
@@ -94,6 +94,5 @@ query getEventsDetails{
       id
       name
     }
-  }
-   
-  }
+  } 
+}` 
